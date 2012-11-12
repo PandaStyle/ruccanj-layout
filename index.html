@@ -52,14 +52,14 @@
     <a class="btn btn-large btn-primary" href="#">Ruccanj be</a>
 </div>
 
-<div class="filters clearfix">
-    <div class="pull-left">
+<div id="filters" class="filters clearfix">
+    <div class="pull-left labelfilters">
         <p class="bold">Ruccanások</p>
-        <span class="nowrap"><span class="label sel">összes</span><span class="label">legújabbak</span><span class="label">népszerűek</span></span>
+        <span class="nowrap"><span class="label sel" data-label="">összes</span><span class="label" data-label="">legújabbak</span><span class="label" data-label="">népszerűek</span></span>
     </div>
-    <div class="pull-left">
+    <div class="pull-left labelfilters">
         <p class="bold">Népszerű címkék</p>
-        <span class="nowrap"><span class="label">bringa</span><span class="label">túra</span><span class="label">kirándulás</span><span class="label">vásárlás</span><span class="label">futóverseny</span><span class="label">hétvége</span></span>
+        <span class="nowrap"><span class="label" data-label="bringa">bringa</span><span class="label" data-label="túra">túra</span><span class="label" data-label="kirándulás">kirándulás</span><span class="label" data-label="vásárlás">vásárlás</span><span class="label" data-label="futóverseny">futóverseny</span><span class="label" data-label="hétvége">hétvége</span></span>
     </div>
     <div class="pull-right">
         <input type="text" placeholder="keresés" class="search"><i class="icon-search"></i>
@@ -74,14 +74,14 @@
 
 <div id="container" class="transitions-enabled clearfix centered">
 
-<div class="box col3 high">
+<div class="box high">
 <div class="inner"><h2>Ruccanj! Ki? Hát te.</h2>Csatlakozz a neked szimpatikus ruccanásokhoz és töltsd izgalmasan a szabadidődet. 
 Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 <a class="btn btn-primary" href="#">Ruccanj be</a>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="bringa túra hétvége">
 <div class="inner">
     <h2><a href="#">Biciklitúra szombaton</a></h2>
     <div class="mb30 labels">
@@ -117,7 +117,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3 sponsored">
+<div class="box sponsored" data-labels="vásárlás akció">
 <div class="inner">
     <h2><a href="#">ZARA 30% akció!!!</a></h2>
     <div class="mb30 labels">
@@ -152,7 +152,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="futás bringa úszás">
 <div class="inner">
     <h2><a href="#">Triatlon Debrecenben, immáron a sokszöveg</a></h2>
     <div class="mb30 labels">
@@ -187,7 +187,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="címke">
 <div class="inner">
     <h2><a href="#">Minimum ennyi adat per tégla</a></h2>
     <div class="mb30 labels">
@@ -205,7 +205,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="bringa túra hétvége">
 <div class="inner">
     <h2><a href="#">Biciklitúra szombaton</a></h2>
     <div class="mb30 labels">
@@ -241,7 +241,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="címke">
 <div class="inner">
     <h2><a href="#">Minimum ennyi adat per tégla</a></h2>
     <div class="mb30 labels">
@@ -259,7 +259,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3 sponsored">
+<div class="box sponsored" data-labels="vásárlás akció">
 <div class="inner">
     <h2><a href="#">ZARA 30% akció!!!</a></h2>
     <div class="mb30 labels">
@@ -294,7 +294,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="futás bringa úszás">
 <div class="inner">
     <h2><a href="#">Triatlon Debrecenben, immáron a sokszöveg</a></h2>
     <div class="mb30 labels">
@@ -329,7 +329,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="bringa túra hétvége">
 <div class="inner">
     <h2><a href="#">Biciklitúra szombaton</a></h2>
     <div class="mb30 labels">
@@ -365,7 +365,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="címke">
 <div class="inner">
     <h2><a href="#">Minimum ennyi adat per tégla</a></h2>
     <div class="mb30 labels">
@@ -383,7 +383,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3 sponsored">
+<div class="box sponsored" data-labels="vásárlás akció">
 <div class="inner">
     <h2><a href="#">ZARA 30% akció!!!</a></h2>
     <div class="mb30 labels">
@@ -418,7 +418,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="futás bringa úszás">
 <div class="inner">
     <h2><a href="#">Triatlon Debrecenben, immáron a sokszöveg</a></h2>
     <div class="mb30 labels">
@@ -453,7 +453,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="bringa túra hétvége">
 <div class="inner">
     <h2><a href="#">Biciklitúra szombaton</a></h2>
     <div class="mb30 labels">
@@ -489,7 +489,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3 sponsored">
+<div class="box sponsored" data-labels="vásárlás akció">
 <div class="inner">
     <h2><a href="#">ZARA 30% akció!!!</a></h2>
     <div class="mb30 labels">
@@ -524,7 +524,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="futás bringa úszás">
 <div class="inner">
     <h2><a href="#">Triatlon Debrecenben, immáron a sokszöveg</a></h2>
     <div class="mb30 labels">
@@ -559,7 +559,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="címke">
 <div class="inner">
     <h2><a href="#">Minimum ennyi adat per tégla</a></h2>
     <div class="mb30 labels">
@@ -577,7 +577,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="bringa túra hétvége">
 <div class="inner">
     <h2><a href="#">Biciklitúra szombaton</a></h2>
     <div class="mb30 labels">
@@ -613,7 +613,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3 sponsored">
+<div class="box sponsored" data-labels="vásárlás akció">
 <div class="inner">
     <h2><a href="#">ZARA 30% akció!!!</a></h2>
     <div class="mb30 labels">
@@ -648,7 +648,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="futás bringa úszás">
 <div class="inner">
     <h2><a href="#">Triatlon Debrecenben, immáron a sokszöveg</a></h2>
     <div class="mb30 labels">
@@ -683,7 +683,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="bringa túra hétvége">
 <div class="inner">
     <h2><a href="#">Biciklitúra szombaton</a></h2>
     <div class="mb30 labels">
@@ -719,7 +719,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3 sponsored">
+<div class="box sponsored" data-labels="vásárlás akció">
 <div class="inner">
     <h2><a href="#">ZARA 30% akció!!!</a></h2>
     <div class="mb30 labels">
@@ -754,7 +754,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="futás bringa úszás">
 <div class="inner">
     <h2><a href="#">Triatlon Debrecenben, immáron a sokszöveg</a></h2>
     <div class="mb30 labels">
@@ -789,7 +789,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="bringa túra hétvége">
 <div class="inner">
     <h2><a href="#">Biciklitúra szombaton</a></h2>
     <div class="mb30 labels">
@@ -825,7 +825,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3 sponsored">
+<div class="box sponsored" data-labels="vásárlás akció">
 <div class="inner">
     <h2><a href="#">ZARA 30% akció!!!</a></h2>
     <div class="mb30 labels">
@@ -860,7 +860,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="futás bringa úszás">
 <div class="inner">
     <h2><a href="#">Triatlon Debrecenben, immáron a sokszöveg</a></h2>
     <div class="mb30 labels">
@@ -895,7 +895,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="bringa túra hétvége">
 <div class="inner">
     <h2><a href="#">Biciklitúra szombaton</a></h2>
     <div class="mb30 labels">
@@ -931,7 +931,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="címke">
 <div class="inner">
     <h2><a href="#">Minimum ennyi adat per tégla</a></h2>
     <div class="mb30 labels">
@@ -949,7 +949,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3 sponsored">
+<div class="box sponsored" data-labels="vásárlás akció">
 <div class="inner">
     <h2><a href="#">ZARA 30% akció!!!</a></h2>
     <div class="mb30 labels">
@@ -984,7 +984,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="futás bringa úszás">
 <div class="inner">
     <h2><a href="#">Triatlon Debrecenben, immáron a sokszöveg</a></h2>
     <div class="mb30 labels">
@@ -1020,7 +1020,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 
 
-<div class="box col3">
+<div class="box" data-labels="címke">
 <div class="inner">
     <h2><a href="#">Minimum ennyi adat per tégla</a></h2>
     <div class="mb30 labels">
@@ -1038,7 +1038,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="bringa túra hétvége">
 <div class="inner">
     <h2><a href="#">Biciklitúra szombaton</a></h2>
     <div class="mb30 labels">
@@ -1074,7 +1074,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3 sponsored">
+<div class="box sponsored" data-labels="vásárlás akció">
 <div class="inner">
     <h2><a href="#">ZARA 30% akció!!!</a></h2>
     <div class="mb30 labels">
@@ -1109,7 +1109,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="futás bringa úszás">
 <div class="inner">
     <h2><a href="#">Triatlon Debrecenben, immáron a sokszöveg</a></h2>
     <div class="mb30 labels">
@@ -1144,7 +1144,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="bringa túra hétvége">
 <div class="inner">
     <h2><a href="#">Biciklitúra szombaton</a></h2>
     <div class="mb30 labels">
@@ -1175,7 +1175,7 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 </div>
 </div>
 
-<div class="box col3">
+<div class="box" data-labels="címke">
 <div class="inner">
     <h2><a href="#">Minimum ennyi adat per tégla</a></h2>
     <div class="mb30 labels">
@@ -1214,18 +1214,59 @@ Bringázz, pókerezz, stb olyanokkal akik csak rád várnak.<br><br>
 
 
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="assets/js/jquery.masonry.min.js"></script>
-<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/jquery-1.8.2.min.js"></script>
+<script src="assets/js/jquery.isotope.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="ruccanj.js"></script>
 
-<script>
+<script type="text/javascript">
 $(function(){
+    
+    var $container = $('#container');
 
-$('#container').masonry({
-itemSelector: '.box',
-isFitWidth: true
-});
+    $container.isotope({
+      itemSelector : '.box'
+    });
 
+
+    
+    
+      var $optionSets = $('#filters .labelfilters'),
+          $optionLinks = $optionSets.find('span');
+
+      $optionLinks.click(function(){
+        var $this = $(this),
+            tempval = $this.attr('data-label');
+        // don't proceed if already selected
+        if ( tempval == "" ) {
+          return false;
+        }
+        var $optionSet = $this.parents('.labelfilters');
+        var offolni = $this.hasClass('sel') ? true : false;
+        $optionSet.find('.sel').removeClass('sel');
+        if (!offolni) $this.addClass('sel');
+  
+        // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        var options = {},
+            key = "filter",
+            value = !offolni ? "[data-labels*=" + tempval + "]" : "*";
+        // parse 'false' as false boolean
+        value = value === 'false' ? false : value;
+        options[ key ] = value;
+        console.log(key, value)
+        if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+          // changes in layout modes need extra logic
+          changeLayoutMode( $this, options )
+        } else {
+          // otherwise, apply new options
+          $container.isotope( options );
+        }
+        
+        return false;
+      });
+    
+    
+    
 });
 </script>
 
