@@ -1,0 +1,373 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+height: 100%;
+/* The html and body elements cannot have any padding or margin. */
+}
+
+body {
+margin: 0 30px !important;
+padding: 0 !important;
+background-color: #FFFFFF;
+min-width: 600px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+/* Negative indent footer by it's height */
+margin: 0 auto -80px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+height: 80px;
+}
+
+
+#footer .footerinner {
+width: auto;
+padding-top: 40px;
+text-align: center;
+}
+
+
+.bold {
+font-weight: bold
+}
+.centered { 
+margin: 0 auto;
+}
+.mb5 {
+margin-bottom: 5px
+}
+.mb8 {
+margin-bottom: 8px
+}
+.mb10 {
+margin-bottom: 10px
+}
+.mb20 {
+margin-bottom: 20px
+}
+.mb30 {
+margin-bottom: 30px
+}
+.nomarg {
+margin: 0
+}
+.righted {
+text-align: right
+}
+.nowrap {
+white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**** Masonry ****/
+
+
+
+.box .inner {
+border: 4px solid white;
+margin: 4px;
+}
+#container {
+padding: 4px 0 0 4px;
+}
+.box {
+margin: -4px 0 0 -4px;
+}
+
+
+
+#container {
+clear: both;
+}
+
+.box {
+width: 300px;
+background: white;
+font-size: 14px;
+line-height: normal;
+background: #505050 url("assets/img/brickback.gif") repeat;
+}
+
+.box.high:hover {
+background: #505050 url("assets/img/brickback.gif") repeat;
+}
+
+.box:hover {
+z-index: 10;
+background: #BD2C3D;
+}
+
+.box:hover .inner, .box.sponsored:hover .inner {
+z-index: 10;
+/*background: #F3F0E9;*/
+} 
+
+.box.sponsored .inner {
+background: #EFEDE6;
+}
+
+.box .inner {
+padding: 30px 16px 16px 16px;
+background-color: white;
+transition: all 0.2s; -moz-transition: all 0.2s; -webkit-transition: all 0.2s; -o-transition: all 0.2s;
+}
+
+.box .desc {
+line-height: 20px;
+padding-left: 21px;
+position: relative; z-index: 1;
+}
+
+.box .desc i {
+position: absolute; z-index: 1; top: 2px; left: 0
+}
+
+.box.high .inner, .box.high:hover .inner {
+background: none;
+color: white
+}
+
+.box.high .inner {
+border: 0;
+margin: 4px
+}
+
+.box h2 {
+white-space: nowrap;
+overflow: hidden; text-overflow: ellipsis;
+font-size: 18px;
+margin: 0 0 30px 0;
+line-height: normal;
+font-weight: normal;
+/*text-shadow: 2px 2px 0 rgba(0, 0, 0, 1), -2px -2px 0 rgba(0, 0, 0, 1), 2px -2px 0 rgba(0, 0, 0, 1), -2px 2px 0 rgba(0, 0, 0, 1);*/
+}
+
+.box h2 a {
+/*color: white*/
+}
+
+.box .labels {
+position: absolute; top: 8px; right: 3px;
+}
+
+.box .sponsored {
+position: absolute; top: 8px; left: 8px;
+}
+
+.box [class^="icon-"], .box [class*=" icon-"] {
+margin-right: 7px
+}
+
+.box img {
+width: 25px; height: 25px; 
+margin-right: 3px
+}
+
+.box .comment {
+padding-left: 55px;
+position: relative; z-index: 1;
+font-size: 12px;
+}
+
+.box .comment img {
+position: absolute; left: 21px; top: 0;
+margin-right: 7px
+}
+
+
+
+
+/**** Masonry - Transitions ****/
+
+.transitions-enabled.masonry,
+.transitions-enabled.masonry .masonry-brick {
+-webkit-transition-duration: 0.7s;
+-moz-transition-duration: 0.7s;
+-ms-transition-duration: 0.7s;
+-o-transition-duration: 0.7s;
+transition-duration: 0.7s;
+}
+
+.transitions-enabled.masonry {
+-webkit-transition-property: height, width;
+-moz-transition-property: height, width;
+-ms-transition-property: height, width;
+-o-transition-property: height, width;
+transition-property: height, width;
+}
+
+.transitions-enabled.masonry  .masonry-brick {
+-webkit-transition-property: left, right, top;
+-moz-transition-property: left, right, top;
+-ms-transition-property: left, right, top;
+-o-transition-property: left, right, top;
+transition-property: left, right, top;
+}
+
+
+/* Masonry - Disable transitions on container */
+.transitions-enabled.infinite-scroll.masonry {
+-webkit-transition-property: none;
+-moz-transition-property: none;
+-ms-transition-property: none;
+-o-transition-property: none;
+transition-property: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main marketing message and sign up button */
+
+.jumbotronouter {
+margin: 0 -30px;
+}
+
+
+.jumbotron {
+padding: 20px 30px 30px 30px;
+text-align: center;
+border-bottom: 2px dotted #E8E8E8;
+margin: 0 -30px 30px -30px
+}
+
+
+
+
+
+.filters {
+margin: 0 0 30px 0;
+color: #505050;
+}
+.filters div:first-child {
+margin-right: 15px;
+}
+
+.filters .pull-right {
+padding-top: 12px;
+}
+
+
+.masthead {
+height: 60px;
+padding-top: 30px
+}
+
+.masthead img {
+margin-top: -4px
+}
+
+.masthead .nav-pills {
+margin-right: -14px
+}
+
+.label {
+margin-right: 5px;
+cursor: pointer;
+font-size: 13px;
+font-weight: normal;
+padding-bottom: 3px;
+transition: all 0.2s; -moz-transition: all 0.2s; -webkit-transition: all 0.2s; -o-transition: all 0.2s;
+}
+.label:hover {
+background-color: #0094FF;
+}
+.label.sel {
+background-color: #505050;
+cursor: default
+}
+.mb30.sponsored .label {
+background: none;
+color: #606060;
+text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+border-radius: 0;
+padding-right: 8px;
+padding-bottom: 5px;
+}
+
+/* bootstrap overrides */
+.btn {
+background: #0094FF;
+}
+.btn-large {
+font-size: 18px
+}
+.btn:hover, .btn:active {
+background: #0080E0;
+}
+.btn:active {
+color: #E0E0E0
+}
+
+a {
+transition: all 0.2s; -moz-transition: all 0.2s; -webkit-transition: all 0.2s; -o-transition: all 0.2s;
+}
+a:hover {
+color: #08C;
+}
+
+
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+color: black;
+background: 0;
+cursor: default;
+}
+
+.icon-search {
+position: relative; z-index: 1; top: -4px; left: -10px;
+}
+
+input[type="text"] {
+padding: 8px 10px
+}
+
+input.search {
+margin-right: -14px;
+padding-right: 30px;
+}
+
+.btn,
+.nav-pills > li > a,
+.label,
+input[type="text"],
+textarea {
+border-radius: 2px;
+}
