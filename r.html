@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="hu-hu">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://ruccanj.hu/">
+<meta property="og:title" content="Ruccanj">
+<meta property="og:image" content="http://ruccanj.hu/assets/img/metaimg.jpg">
+<meta property="og:description" content="Csatlakozz a neked szimpatikus ruccanásokhoz és töltsd izgalmasan a szabadidődet. Bringázz, pókerezz, kosárlabdázz olyanokkal akik csak rád várnak.">
+<meta name="description" content="Csatlakozz a neked szimpatikus ruccanásokhoz és töltsd izgalmasan a szabadidődet. Bringázz, pókerezz, kosárlabdázz olyanokkal akik csak rád várnak.">
+<link rel="canonical" href="http://ruccanj.hu/" />
+<title>ruccanj.hu</title>
+
+
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="ruccanj.css" />
+
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="assets/img/apple-touch-icon-57-precomposed.png">
+</head>
+
+<body>
+
+<div id="wrap">
+
+<div class="masthead">
+    <ul class="nav nav-pills pull-right">
+    <li class="active"><a href="#">Kezdő</a></li>
+    <li><a href="#">Mi ez?</a></li>
+    <li><a href="#">Kontakt</a></li>
+    </ul>
+    <img src="assets/img/ruccanjlogo.png" title="ruccanj.hu">
+</div>
+
+
+
+<div id="filters" class="filters clearfix">
+    <div class="pull-left">
+        <h1>Biciklitúra szombaton</h1>
+        Publikus ruccanás, címkék:
+        <span class="nowrap noclick"><span class="label" data-label="bringa">bringa</span><span class="label" data-label="túra">túra</span><span class="label" data-label="hétvége">hétvége</span></span>
+    </div>
+    <div class="pull-right">
+        <input type="text" placeholder="keresés" class="search"><i class="icon-search"></i>
+    </div>
+</div>
+
+
+
+
+<div class="details">
+    <div class="mb10 when bold">
+        <i class="icon-calendar" title="Mikor"></i>Nov 24, szombat, 10:00-14:00
+    </div>
+    <div class="mb10 bold">
+        <i class="icon-map-marker" title="Hol"></i>Bp, 3. ker, Szépvölgyi HÉV megálló 
+    </div>
+    <input type="hidden" name="where" id="form-where" placeholder="hol" value="Budapest, Szépvölgyi út, HÉV megálló">
+    <input type="hidden" id="form-latLng" name="form-latLng">
+    <div id="mapdiv"></div>
+    <div class="mb30">
+        <i class="icon-info-sign" title="Info"></i>Tekerünk egyet a Pilisben, általában délután 2 körül ér véget. Figyelem: 40es átlaggal megyünk!
+    </div>
+
+    <div class="mb30">
+        <a class="btn btn-large btn-primary" href="#">Ott leszek</a>
+    </div>
+    
+    <div class="mb10">
+        <i class="icon-user" title="Kik"></i>Ott lesznek (15)
+    </div>
+    <div class="members">
+        <div class="mb30 bold">
+            <img src="assets/img/u1.jpg"><img src="assets/img/u2.jpg"><img src="assets/img/u3.jpg"><img src="assets/img/u4.jpg"><img src="assets/img/u5.jpg"><img src="assets/img/u6.jpg"><img src="assets/img/u8.jpg"><img src="assets/img/u1.jpg"><img src="assets/img/u2.jpg"><img src="assets/img/u3.jpg"><img src="assets/img/u4.jpg"><img src="assets/img/u5.jpg"><img src="assets/img/u6.jpg"><img src="assets/img/u8.jpg"><img src="assets/img/u2.jpg">
+        </div>
+        <div class="mb10 bold">
+            <i class="icon-comment" title="Hozzászólások"></i>Hozzászólások
+        </div>
+        <div class="comment mb20">
+            <img src="assets/img/u20.jpg"><input type="text" class="commentinput" id="commentinput" placeholder="Új hozzászólás">
+            <textarea class="commentinput" id="commenttextarea" placeholder="Új hozzászólás" style="display: none"></textarea>
+            <p><a class="btn btn-primary" href="#" id="commentsubmit" style="display: none">Mehet</a></p>
+        </div>
+        <div class="comment mb20">
+            <img src="assets/img/u8.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <div class="muted">tegnap 18:02</div>
+        </div>
+        <div class="comment mb20">
+            <img src="assets/img/u1.jpg">Consectetur adipiscing elit. Vivamus quis erat vitae ligula consectetur aliquet id ac nisl.
+            <div class="muted">tegnap 12:50</div>
+        </div>
+        <div class="comment mb20">
+            <img src="assets/img/u7.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur adipiscing elit dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ligula consectetur aliquet consectetur adipiscing elit.
+            <div class="muted">2 napja 17:05</div>
+        </div>
+        <div class="comment mb20">
+            <img src="assets/img/u6.jpg">Consectetur adipiscing elit. Vivamus ligula consectetur aliquet id ac nisl.
+            <div class="muted">3 napja</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div id="push"></div>
+</div>  <!-- #wrap -->
+
+<div id="footer">
+<div class="footerinner">
+<p class="muted">&copy; 2012 ruccanj.hu &nbsp; <a href="#"><b>f</b>acebook</a> | <a href="#"><b>t</b>witter</a></p>
+</div>
+</div>
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery-1.8.2.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="jmap.js"></script>
+
+<script type="text/javascript">
+    openMap(1, false);
+
+    document.getElementById('commentinput').onclick = function() {
+        document.getElementById('commentinput').style.display = "none";
+        document.getElementById('commenttextarea').style.display = document.getElementById('commentsubmit').style.display = "";
+        document.getElementById('commenttextarea').focus();
+    };
+</script>
+
+</body>
+</html>

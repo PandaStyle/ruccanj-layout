@@ -34,7 +34,7 @@ function setMyMapCenter(which, LL)
     updateMarkerPosition(LL)
 }
 
-function initializeMap(which) {
+function initializeMap(which, draggable) {
   latLng[which] = new google.maps.LatLng(47.4984056, 19.040757799999938);
   map[which] = new google.maps.Map(document.getElementById('mapdiv'), {
     zoom: 15,
@@ -47,9 +47,9 @@ function initializeMap(which) {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
   marker[which] = new google.maps.Marker({
-    title: 'Dobd ezt a tüskét a címhez', 
+    title: draggable ? 'Dobd ezt a tüskét a címhez' : 'Itt', 
     map: map[which],
-    draggable: true
+    draggable: draggable
     //icon: 'assets/img/marker_sprite.png'
   });
 
@@ -95,8 +95,8 @@ function codeAddress(which, forced) {
 	}
 }
 
-function openMap(which)
+function openMap(which, draggable)
 {
-    initializeMap(which);
+    initializeMap(which, draggable);
     codeAddress(which, false);
 };

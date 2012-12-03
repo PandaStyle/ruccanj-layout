@@ -180,7 +180,8 @@ position: absolute; top: 8px; right: 3px;
 position: absolute; top: 8px; left: 8px;
 }
 
-.box [class^="icon-"], .box [class*=" icon-"] {
+.box [class^="icon-"], .box [class*=" icon-"], 
+.details [class^="icon-"], .details [class*=" icon-"] {
 margin-right: 7px
 }
 
@@ -197,7 +198,6 @@ font-size: 12px;
 
 .box .comment img {
 position: absolute; left: 21px; top: 0;
-margin-right: 7px
 }
 
 
@@ -412,7 +412,8 @@ h1 {
 
 /* new rucc */
 
-div.new {
+div.new, 
+div.details {
     width: 540px;
     margin: 0 auto
 }
@@ -431,3 +432,43 @@ div.new select#form-public {
 div.new textarea {
     height: 100px
 }
+
+div.new div#mapdiv {
+    width: 100%; height: 400px
+}
+
+/* existing rucc */
+div.details div#mapdiv {
+    width: 100%; height: 350px;
+    margin-bottom: 20px
+}
+
+div.details div.members .commentinput {
+    width: 450px;
+}
+
+div.details div.members textarea {
+    height: 100px;
+}
+
+div.details div.members img {
+    width: 50px; height: 50px; 
+    margin: 0 5px 5px 0
+}
+
+div.details div.members .comment {
+    padding-left: 60px;
+    position: relative; z-index: 1;
+    font-size: 12px;
+    min-height: 60px
+}
+
+div.details div.members .comment img {
+    position: absolute; left: 0; top: 0;
+}
+
+span.noclick span.label:hover {
+    background-color: #999;
+    cursor: auto;
+}
+
